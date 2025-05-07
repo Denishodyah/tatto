@@ -1,0 +1,35 @@
+.master {
+    margin-bottom: 212px;
+}
+
+.master-cards {
+    display: grid;
+    gap: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 435px));
+    @media (max-width: 1100px) {
+gap: 100px;        
+    }
+}
+.master-cards__item {
+    text-align: center;
+}
+.master-cards__img {
+    border-radius: 50px;
+    margin-bottom: 60px;
+}
+.master-cards__link {
+   display: inline-flex;
+   flex-wrap: nowrap;
+ color: $color-white;
+font-size: clamp(0.938rem, 0.713rem + 0.92vw, 1.875rem);//30px
+background-color: $color-black;
+border: none;
+padding: 20px 50px;
+text-transform: uppercase;
+border-radius: 20px;
+transition: $transition-duration;
+&:hover {
+    background-color: $color-white;
+    color: $color-black;
+}
+};

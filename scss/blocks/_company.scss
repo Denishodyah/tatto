@@ -1,0 +1,16 @@
+
+.company-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 95px;
+}
+.company-des {
+    p {
+        color: $color-black;
+        font-size: clamp(1.5rem, 1.141rem + 1.47vw, 3rem);//48px
+        max-width: 708px;
+        margin-bottom: 20px;
+
+    }
+}

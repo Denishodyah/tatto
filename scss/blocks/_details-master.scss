@@ -1,0 +1,67 @@
+.details {
+    padding-top: 165px;
+}
+
+.details-master {
+    display: flex;
+    flex-direction: column;
+    gap: 230px;
+    @media (max-width: 1620px) {
+        justify-content: center;   
+           
+       }
+    
+       &__item {
+           display: flex;
+           flex-wrap: wrap;
+           gap: 81px;
+           @media (max-width: 1620px) {
+               justify-content: center;   
+                  
+              }
+       }
+}
+
+.master-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $color-black;
+    @media (max-width: 1620px) {
+       align-items: center;;   
+           
+       }
+   
+       &__name {
+          
+       font-family: "Inter";
+       font-size: clamp(2.063rem, 1.12rem + 3.87vw, 6rem);//96px
+       margin-bottom: 20px;
+       
+       }
+       &__descr {
+       font-family: "Inter";
+       max-width: 930px;
+       margin-bottom: 15px;
+       font-size: clamp(1.5rem, 1.141rem + 1.47vw, 3rem);//48px
+       
+       
+       }
+}
+.details-master__button {
+    display: inline-flex;
+    flex-wrap: nowrap;
+   
+    max-width: 632px;
+    background-color: $color-black;
+    border: none;
+    color: $color-white;
+font-size: clamp(2.063rem, 1.12rem + 3.87vw, 6rem);//96px
+border-radius: 50px;
+padding: 14px 32px;
+transition: $transition-duration;
+&:hover {
+    background-color: $color-white;
+    color: $color-black;
+}
+}

@@ -1,0 +1,44 @@
+.inform {
+    margin-bottom: 250px;
+    &__title {
+        color: $color-black;
+    font-size:clamp(1rem, 0.761rem + 0.98vw, 2rem);//32px
+    font-weight: 400;
+    max-width: 390px;
+    margin-bottom: 60px;
+    margin-left: 15px;
+    }
+}
+
+.inform-block {
+    display: flex;
+    column-gap: 350px;
+    flex-wrap: wrap;
+    
+}
+
+.contacts {
+    background-color: $color-brown;
+    border-radius: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-black;
+
+height: 375px;
+padding: 50px;
+
+&__tel {
+    margin-bottom: 30px;
+}
+&__mail {
+    margin-bottom: 50px;
+}
+&__line {
+    display: inline-flex;
+    width: 100%;
+    height: 10px;
+    background-color: $color-black;
+    margin-bottom: 50px;
+}
+}

@@ -1,0 +1,41 @@
+.appointment {
+    text-align: center;
+    padding-top: 152px;
+    margin-bottom: 176px;
+
+&__title {
+    color: $color-black;
+    font-family: "Monserrat-Alertnation";
+    font-size: clamp(2.063rem, 1.12rem + 3.87vw, 6rem); //96px
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase; 
+}
+}
+.appointment-block {
+    width: 100%;
+    max-width: 703px;
+    margin: 0 auto;
+    text-align: center;
+}
+.appoitment-block__btn {
+  
+    display: inline-flex;
+   justify-content: center;
+    text-transform: uppercase;
+    padding: 40px 110px;
+    background-color: $color-black;
+    color: $color-white;
+    border: none;
+    border-radius: 30px;
+    transition-duration: $transition-duration;
+    &:hover {
+        background-color: $color-white;
+        color: $color-black;
+    }
+    &:active {
+        background-color: $color-black;
+        color: $color-white;
+
+}
+}

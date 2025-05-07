@@ -1,0 +1,154 @@
+.slider-tattoo {
+   margin-bottom: 120px;
+   margin: 0 auto;
+   position: relative;
+};
+.slider-tatto-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 121px;
+   &__title {
+   display: inline-flex;
+   column-gap: 30px;
+   align-items: center;
+    color: $color-black;
+    font-family: "Monserrat-Medium";
+    font-size: clamp(1.5rem, 1.141rem + 1.47vw, 3rem);//48px
+    font-weight: 500;
+    @media (max-width: 395px) {
+      column-gap: 15px;
+      
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+       background-color: $color-black;
+   
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+       background-color: $color-black;
+    }
+}
+};
+/* Базовые стили контейнера слайдера */
+.slider {
+  position: relative;
+  width: 80%;
+  max-width: 1066px;
+  margin: 50px auto;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Скрываем лишние части блоков */
+  perspective: 1000px; /* Добавляем глубину */
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-item {
+  position: absolute;
+  width: 60%; /* Размер каждого блока */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease, z-index 0.5s ease, opacity 0.5s ease;
+   /* Прозрачность для задних изображений */
+  transform: translateX(0) scale(0.8); /* Уменьшаем задние элементы */
+  z-index: 0; /* Отправляем назад */
+}
+
+/* Центральное (активное) изображение */
+.slider-item.active {
+  opacity: 1;
+  transform: translateX(0) scale(1); /* Полный размер */
+  z-index: 10; /* Поверх всех */
+}
+
+/* Картинка слева */
+.slider-item.left {
+  transform: translateX(-10%) scale(0.9); /* Уменьшаем и двигаем влево */
+  z-index: 5; /* Объём */
+}
+
+/* Картинка справа */
+.slider-item.right {
+  transform: translateX(10%) scale(0.9); /* Уменьшаем и двигаем вправо */
+  z-index: 5;
+}
+
+/* Стрелки */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+ background: transparent;
+  
+  border: none;
+  
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.slider-btn.prev {
+  left: 100px;
+  @media (max-width: 1156px) {
+    left: 80px;
+    
+  }
+  @media (max-width: 990px) {
+    left: 40px;
+    
+  }
+  @media (max-width: 750px) {
+    left: 20px;
+    
+  }
+  @media (max-width: 568px) {
+    left: 0px;
+    
+  }
+}
+
+.slider-btn.next {
+  right: 100px;
+  @media (max-width: 1156px) {
+    right: 40px;
+    
+  }
+  @media (max-width: 990px) {
+    right: 40px;
+    
+  }
+  @media (max-width: 750px) {
+    right: 20px;
+    
+  }
+  @media (max-width: 568px) {
+    right: 0px;
+    
+  }
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  
+}

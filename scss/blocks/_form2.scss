@@ -1,0 +1,36 @@
+
+.form2 {
+    max-width: 1678px;
+}
+.form-block2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+.form__input2 {
+    max-width: 1419px;
+    padding: 30px;
+    @media (max-width: 700px) {
+        padding: 20px;
+        
+    }
+}
+.form__btn2 {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: $color-black;
+    color: $color-white;
+    border-radius: 30px;
+    padding: 12px 0 12px;
+    border: none;
+    transition: $transition-duration;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-white;
+        color: $color-black;
+    }
+}

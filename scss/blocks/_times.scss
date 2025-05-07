@@ -1,0 +1,72 @@
+.times {
+    text-align: center;
+}
+
+.times__title {
+    color: $color-black;
+    font-family: "Monserrat-Alertnation";
+    font-size:clamp(2.688rem, 2.044rem + 2.64vw, 5.375rem); //86px  
+    line-height: 1.2;
+
+        text-transform: uppercase; 
+        font-weight: 400;
+   display: inline-flex;
+   align-items: center;
+   column-gap: 30px;
+   margin-bottom: 79px;
+        &::after {
+           content: "";
+           display: block;
+           width: 60px;
+           height: 4px;
+          background-color: $color-black;
+      
+       }
+       &::before {
+           content: "";
+           display: block;
+           width: 60px;
+           height: 4px;
+          background-color: $color-black;
+       }
+   
+   }
+
+.time-block {
+    display: flex;
+    column-gap: 200px;
+    flex-wrap: wrap;
+    @media (max-width: 1110px) {
+        justify-content: center;
+        
+    }
+}
+.time-block__item {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-block__time {
+    background-color: $color-black;
+    color: $color-white;
+    max-width: 148px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  margin-bottom: 32px;
+  padding: 10px;
+  font-size: clamp(2rem, 1.521rem + 1.96vw, 4rem);//64px
+border-radius: 13px;
+transition-duration: $transition-duration;
+cursor: pointer;
+&:hover {
+    background-color: $color-white;
+    color: $color-black;
+}
+&:active {
+    background-color: $color-black;
+    color: $color-white;
+}
+}

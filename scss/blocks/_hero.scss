@@ -1,0 +1,40 @@
+.hero {
+    position: relative;
+    z-index: -1;
+    margin-bottom: 400px;
+    
+}
+
+.hero__title {
+
+    color: $color-black;
+font-family: "Monserrat-Alertnation";
+font-size: clamp(2.938rem, 2.205rem + 3.01vw, 6rem);//96px
+font-weight: 400;
+max-width: 1053px;
+}
+.hero__dekor {
+    position: absolute;
+    top: -90px;
+    right: -160px;
+    @media (max-width: 3000px) {
+        right: 400px;
+        
+    }
+    @media (max-width: 2500px) {
+        right: 200px;
+        
+    }
+    @media (max-width: 2000px) {
+        right: 50px;
+        
+    }
+    @media (max-width: 1500px) {
+        right: -150px;
+        
+    }
+    @media (max-width: 1200px) {
+       top: 12px;
+        
+    }
+}
