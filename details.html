@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tattoo">
+    <title>tattoo</title>
+    <link rel="shortcut icon" href="./image/tattoochebcompany.svg" type="image/x-icon">
+    <!-- иконка на вкладку-->
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <!-- Используйте для изображений WebP вместо JPEG или PNG . -->
+    <!-- минимальное размер шрифта должен быть 12px -->
+    <header class="header">
+      <div class="header__menu menu">
+        <div class="menu__icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#about" class="menu__link"> О нас</a></li>
+            <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+          <li class="menu__item"><a href="index.html" class="header__logo"><img src="./image/logo.svg" alt="лого" width="150" height="150" loading="lazy"></a></li>
+          <li class="menu__item"><a href="galleria.html" class="menu__link">Портфолио</a></li>
+          <li class="menu__item"><a href="appointment.html" class="menu__link">запись</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a href="/" class="header-logo"
+        ><img
+          src="./image/logo.svg"
+          alt="лого"
+          width="150"
+          height="150"
+          loading="lazy"
+      ></a>
+    </header>
+    <main class="main">
+      <section class="details">
+        <h1 class="visually-hidden">Информация о мастерах</h1>
+        <div class="container">
+          <ul class="details-master">
+            <li class="details-master__item">
+              <img
+                src="./image/master.webp"
+                alt="мастер"
+                class="details-master__img"
+                width="576" height="1075" loading="lazy"
+              >
+              <div class="master-about">
+                <p class="master-about__name">Марина Петрова</p>
+                <p class="master-about__descr">
+                  Марина — талантливый тату-мастер, известная своим уникальным
+                  стилем и креативным подходом. Она специализируется на
+                  акварельных и минималистичных татуировках, которые гармонично
+                  вписываются в любую эстетику. Марина всегда стремится создать
+                  индивидуальный дизайн, отражающий личность клиента. Ее работы
+                  отличаются яркими цветами и легкостью линий, что делает каждую
+                  татуировку настоящим произведением искусства.
+                </p>
+                <button class="details-master__button">Записаться</button>
+              </div>
+            </li>
+            <li class="details-master__item">
+              <img
+                src="./image/master2.webp"
+                alt="мастер"
+                class="details-master__img"
+                 width="576" height="1075" loading="lazy"
+              >
+              <div class="master-about">
+                <p class="master-about__name" id="kostian">Костя Алексеев</p>
+                <p class="master-about__descr">
+                  Костя — опытный тату-мастер с более чем 10-летним стажем.
+                  Специализируется на реалистичных портретах и цветной графике.
+                  Его работы отличаются высокой детализацией и глубокими
+                  эмоциями. Костя всегда внимательно относится к пожеланиям
+                  клиентов и помогает им реализовать самые смелые идеи. Он также
+                  активно участвует в международных тату-конвенциях, что
+                  позволяет ему быть в курсе последних трендов и техник.
+                </p>
+                <button class="details-master__button">Записаться</button>
+              </div>
+            </li>
+            <li class="details-master__item">
+              <img
+                src="./image/master3.webp"
+                alt="мастер"
+                class="details-master__img"
+                 width="576" height="1075" loading="lazy"
+              >
+              <div class="master-about">
+                <p class="master-about__name">Роман Агатьев</p>
+                <p class="master-about__descr">
+                  Роман — мастер с богатым опытом и страстью к татуировке. Он
+                  специализируется на традиционных и нео-традиционных стилях,
+                  сочетая классические элементы с современными техниками. Роман
+                  уделяет внимание каждой детали и всегда стремится к
+                  совершенству в своих работах. Его клиенты ценят его
+                  профессионализм и умение создать комфортную атмосферу во время
+                  сеанса, что делает процесс нанесения татуировки приятным и
+                  незабываемым.
+                </p>
+                <button class="details-master__button">Записаться</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-block">
+          <address class="footer-block__address">
+            <a href="tel:+79176711572" class="contacts__tel"
+              >+7 917 671 15-72</a
+            >
+            <p>г. Чебоксары, ул. Деменьтева 1</p>
+          </address>
+          <div class="social">
+            <a href="/" class="social__link">Вконтакте </a>
+            <a href="/" class="social__link"> Instagram</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./JavaScript/main.js"></script>
+  </body>
+</html>
