@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tattoo">
+    <title>tattoo</title>
+    <link rel="shortcut icon" href="./image/tattoochebcompany.svg" type="image/x-icon"> <!-- иконка на вкладку-->	
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<!-- Используйте для изображений WebP вместо JPEG или PNG . -->
+   <!-- минимальное размер шрифта должен быть 12px -->
+   <header class="header">
+		<div class="header__menu menu">
+			<div class="menu__icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#about" class="menu__link"> О нас</a></li>
+					<li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+				<li class="menu__item"><a href="index.html" class="header__logo"><img src="./image/logo.svg" alt="лого" width="150" height="150" loading="lazy"></a></li>
+				<li class="menu__item"><a href="galleria.html" class="menu__link">Портфолио</a></li>
+				<li class="menu__item"><a href="appointment.html" class="menu__link">запись</a></li>
+				</ul>
+				</nav>
+
+		</div>
+		<a href="/" class="header-logo"><img src="./image/logo.svg" alt="лого" width="150" height="150" loading="lazy"></a>
+	</header>
+  <main class="main">
+	<section class="appointment">
+      
+            <h2 class="appointment__title">запись на консультацию</h2>
+     
+    </section>
+	<div class="dates">
+		<div class="container">
+			<h2 class="date__title">дата</h2>
+			<div class="date-block">
+				<select name="month" class="date-block__month">
+					<option value="январь">Январь</option>
+					<option value="февраль">Февраль</option>
+					<option value="март">Март</option>
+					<option value="апрель">Апрель</option>
+				    <option value="маи">Май</option>
+					<option value="июнь">Июнь</option>
+					<option value="июль">Июль</option>
+					<option value="август">Август</option>
+					<option value="сентябрь">Сентябрь</option>
+					<option value="октябрь">Октябрь</option>
+					<option value="ноябрь">Ноябрь</option>
+					<option value="декабрь" selected>Декабрь</option>
+				</select>
+				<select id="year" name="year">
+					<option value="">2024</option>
+					<!-- Генерация опций для годов -->
+					<script>
+						const startYear = 2000;
+						const endYear = new Date().getFullYear(); // Текущий год
+						const selectElement = document.getElementById('year');
+			
+						for (let year = startYear; year <= endYear; year++) {
+							const option = document.createElement('option');
+							option.value = year;
+							option.textContent = year;
+							selectElement.appendChild(option);
+						}
+					</script>
+				</select>
+			</div>
+				<div class="dates-block">
+			
+					<div class="dates-block__day">1</div>
+					<div class="dates-block__day">2</div>
+					<div class="dates-block__day">3</div>
+					<div class="dates-block__day">4</div>
+					<div class="dates-block__day">5</div>
+					<div class="dates-block__day">6</div>
+					<div class="dates-block__day">7</div>
+					<div class="dates-block__day">8</div>
+					<div class="dates-block__day">9</div>
+					<div class="dates-block__day">10</div>
+					<div class="dates-block__day">11</div>
+					<div class="dates-block__day">12</div>
+					<div class="dates-block__day">13</div>
+					<div class="dates-block__day">14</div>
+					<div class="dates-block__day">15</div>
+					<div class="dates-block__day">16</div>
+					<div class="dates-block__day">17</div>
+					<div class="dates-block__day">18</div>
+					<div class="dates-block__day">19</div>
+					<div class="dates-block__day">20</div>
+					<div class="dates-block__day">21</div>
+					<div class="dates-block__day">22</div>
+					<div class="dates-block__day">23</div>
+					<div class="dates-block__day">24</div>
+					<div class="dates-block__day">25</div>
+					<div class="dates-block__day">26</div>
+					<div class="dates-block__day">27</div>
+					<div class="dates-block__day">28</div>
+					<div class="dates-block__day">29</div>
+					<div class="dates-block__day">30</div>
+					<div class="dates-block__day">31</div>
+				</div>
+				
+			
+		</div>
+	</div>
+	<div class="times">
+		<div class="container">
+		<h2 class="times__title">время</h2>
+		<ul class="time-block">
+			<li class="time-block__item">
+				<img src="./image/master.webp" alt="мастер" class="master-cards__img" width="435" height="654" loading="lazy">
+				<time class="time-block__time">12:30</time>
+				<time class="time-block__time">14:30</time>
+				<time class="time-block__time">16:30</time>
+			</li>
+			<li class="time-block__item">
+				<img src="./image/master2.webp" alt="мастер" class="master-cards__img" width="435" height="654" loading="lazy">
+				<time class="time-block__time">11:30</time>
+				<time class="time-block__time">13:15</time>
+				<time class="time-block__time">14:30</time>
+			</li>
+			<li class="time-block__item">
+				<img src="./image/master3.webp" alt="мастер" class="master-cards__img" width="435" height="654" loading="lazy">
+				<time class="time-block__time">11:15</time>
+				<time class="time-block__time">17:30</time>
+				<time class="time-block__time">19:45</time>
+			</li>
+		</ul>		
+		</div>
+	</div>
+	<div class="container">
+	<form action="/" class="form form2">
+		<div class="form-block form-block2">
+			<label for="name" class="form__label form__label2">
+				<input type="text" placeholder="Имя" id="name" class="form__input2">
+			</label>
+			<label for="phone" class="form__label form__label2">
+				<input type="tel" placeholder="Номер телефона" id="phone" class="form__input2">
+			</label>
+			<button type="submit" class="form__btn form__btn2">Отправить</button>
+		</div>
+	</form>
+<div class="appointment-block">
+	<button class="appoitment-block__btn" type="button">Записаться</button>
+</div>
+	</div>
+  </main>
+  <footer class="footer">
+	<div class="container">
+		<div class="footer-block">
+			<address class="footer-block__address">
+				<a href="tel:+79176711572" class="contacts__tel">+7 917 671 15-72</a>
+				<p>г. Чебоксары, ул. Деменьтева 1</p>
+			</address>
+<div class="social">
+	<a href="/" class="social__link">Вконтакте </a>
+	<a href="/" class="social__link"> Instagram</a>
+</div>
+		</div>
+	</div>
+  </footer>
+
+    <script src="./JavaScript/main.js"></script>
+</body>
+</html>
